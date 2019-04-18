@@ -16,17 +16,17 @@ var sectionStyle = {
 };
 
 
-class Register extends Component {
+class Login extends Component {
     render() {
         return (
             <div className="App" style={sectionStyle}>
                 <Navbar></Navbar>
                 <Container>
-                    <h1>REGISTER</h1>  
+                    <h1>CONTACT</h1>  
                 </Container>
             </div>
         );
     }
 }
 
-export default Register;
+export default Login;
