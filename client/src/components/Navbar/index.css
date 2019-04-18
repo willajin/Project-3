@@ -1,0 +1,14 @@
+#brand-header {
+    font-size: 60px;
+}
+
+#tag-line {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#basic-navbar-nav {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
