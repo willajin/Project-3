@@ -23,6 +23,7 @@ class Game extends Component {
                 <Navbar></Navbar>
                 <Container>
                     <h1>GAME</h1>
+                    <MainButton><a href="./CatBanana.html"><img src="../images/pizza.png"></img> </a></MainButton>
                 </Container>
             </div>
         );
