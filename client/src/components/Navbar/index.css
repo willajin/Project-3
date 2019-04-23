@@ -1,15 +1,17 @@
-#brand-header {
-    font-size: 60px;
-}
-
-#tag-line {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+#nav-bar {
+    font-family: 'Press Start 2P', cursive;
+    border-left: 10px solid #1a1a1a;
+    border-bottom: 10px solid #1a1a1a;
+    border-top: 10px solid #a6a6a6;
+    border-right: 10px solid #333333;
 }
 
 #basic-navbar-nav {
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-left: 70px;
 }
 
+#nav-option {
+    
+}

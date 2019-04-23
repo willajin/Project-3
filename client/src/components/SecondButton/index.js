@@ -3,12 +3,12 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import "./index.css";
 
-function MainButton(props) {
+function SecondButton(props) {
     return (
-            <Button id="main-button">
+            <Button variant="dark" id="second-button">
                 {props.children}
             </Button>
     );
 }
 
-export default MainButton;
+export default SecondButton;

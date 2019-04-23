@@ -1,0 +1,23 @@
+#second-button {
+    margin: 20px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #8c8c8c;
+    border-left: 7px solid #595959;
+    border-bottom: 7px solid #595959;
+    border-top: 7px solid #d9d9d9;
+    border-right: 7px solid #737373;
+}
+
+#second-button:hover {
+    background-color: #404040;
+    border-left: 7px solid #1a1a1a;
+    border-bottom: 7px solid #1a1a1a;
+    border-top: 7px solid #a6a6a6;
+    border-right: 7px solid #333333;
+    font-weight: bold;
+}

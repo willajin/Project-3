@@ -1,15 +1,31 @@
 // footer component
-import React from "react";
+import React, { Component } from "react";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import logo from "../../images/r3logo.png";
 import "./index.css";
 
-function Footer(props) {
-    return (
-        <div className="footer">
-            <h1>Footer</h1>
-            <hr className="my-4"></hr>
-            {props.children}
-        </div>
-    )
+class Footer extends Component {
+    render() {
+        return (
+            <Navbar bg="dark" variant="dark" expand="lg" sticky="bottom" id="nav-bar">
+                <Navbar.Brand href={"/"} id="brand-header"><img src={logo} /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href={"/"} id="nav-option">Home</Nav.Link>
+                        <Nav.Link href={"/mission"} id="nav-option">Mission</Nav.Link>
+                        <Nav.Link href={"/learn"} id="nav-option">Learn</Nav.Link>
+                        <Nav.Link href={"/game"} id="nav-option">Game</Nav.Link>
+                        <Nav.Link href={"/contact"} id="nav-option">Contact</Nav.Link>
+                        <NavDropdown title="Account" id="basic-nav-dropdown nav-option">
+                            <NavDropdown.Item href={"/login"}>Log In</NavDropdown.Item>
+                            <NavDropdown.Item href={"/register"}>Sign Up</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        );
+    }
 }
 
 export default Footer;

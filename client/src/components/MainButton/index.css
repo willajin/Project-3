@@ -1,7 +1,22 @@
 #main-button {
     margin-left: 20px;
     margin-right: 20px;
-    padding: 15px 30px 15px 30px;
-    text-transform: uppercase;
+    padding: 30px 15px 30px 15px;
+    background-color: #99cc00;
+    border-radius: 0px;
+    border-left: 7px solid #608000;
+    border-bottom: 7px solid #608000;
+    border-top: 7px solid #ecffb3;
+    border-right: 7px solid #86b300;
     letter-spacing: 3px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+
+#main-button:hover {
+    background-color: #404040;
+    border-left: 7px solid #1a1a1a;
+    border-bottom: 7px solid #1a1a1a;
+    border-top: 7px solid #a6a6a6;
+    border-right: 7px solid #333333;
 }
