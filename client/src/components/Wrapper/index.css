@@ -3,8 +3,12 @@
     width: 100%;
     margin: 0 auto;
     justify-content: space-around;
-    padding: 50px;
+    padding: 100px;
     margin-top: 50px;
-    border: 5px solid black;
-    background-color: #8c8c8c;
+    margin-bottom: 50px;
+    background-color: rgb(179, 179, 179, 0.75);
+    border-left: 7px solid #595959;
+    border-bottom: 7px solid #595959;
+    border-top: 7px solid #d9d9d9;
+    border-right: 7px solid #737373;
 }

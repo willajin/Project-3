@@ -15,40 +15,57 @@ import MainCard from "../components/MainCard";
 import SecondCard from "../components/SecondCard";
 import MainCardGroup from "../components/MainCardGroup";
 import Wrapper from "../components/Wrapper";
+import '../App.css';
 
-var sectionStyle = {
+const backgroundStyle = {
     width: "100%",
     height: "985px",
     backgroundImage: `url(${Background})`
+};
+
+const colorStyle = {
+    backgroundColor: "white"
+};
+
+const centerStyle = {
+    margin: "0 auto"
 };
 
 
 class Home extends Component {
     render() {
         return (
-            <div className="App" style={sectionStyle}>
-                <Navbar></Navbar>
+            <div className="App">
+                <div style={backgroundStyle}>
+                    <Navbar></Navbar>
+                    <MainContainer>
+                        <Row>
+                            <Link to={'./learn'}>
+                                <MainButton>
+                                    <h1>Learn to Reduce, Reuse, React</h1>
+                                </MainButton>
+                            </Link>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Link to={'./mission'}>
+                                    <div style={centerStyle}>
+                                    <SecondButton>
+                                        What is R<sup>3</sup> ?
+                                    </SecondButton>
+                                    </div>
+                                </Link>
+                            </Col>
+                        </Row>
+                    </MainContainer>
+                </div>
+                <div style={colorStyle}>
                 <MainContainer>
                     <Row>
-                        <Link to={'./learn'}>
-                            <MainButton>
-                                <h1>Learn to Reduce, Reuse, React</h1>
-                            </MainButton>
-                        </Link>
+                        <MainCardGroup></MainCardGroup>
                     </Row>
-                    <Row>
-                        <Col>
-                            <Link to={'./mission'}>
-                                <SecondButton>
-                                    What is R<sup>3</sup> ?
-                            </SecondButton>
-                            </Link>
-                        </Col>
-                    </Row>
-                <Row>
-                    <MainCardGroup></MainCardGroup>
-                </Row>
                 </MainContainer>
+                </div>
             </div>
         );
     }
