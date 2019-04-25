@@ -25,7 +25,7 @@ class Game extends Component {
                     <h1>GAME</h1>
                     <MainButton><a href="./Banana.html"><img src="./images/banana.png"></img> </a></MainButton>
                     <MainButton><a href="./WaterBottle.html"><img src="./images/waterfull.png"></img> </a></MainButton>
-                    <MainButton><a href="./Bottle.html"><img src="./images/pizza.png"></img> </a></MainButton>
+                    <MainButton><a href="./Pizza.html"><img src="./images/pizza.png"></img> </a></MainButton>
 
                 </Container>
             </div>
