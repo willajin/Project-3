@@ -4,6 +4,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import SecondButton from "../SecondButton";
 import tree from "../../images/tree.png";
+import bluebin from "../../images/bluebin.png";
+import recycle from "../../images/recycle.png";
 import "./index.css";
 
 class MainCardGroup extends Component {
@@ -13,8 +15,8 @@ class MainCardGroup extends Component {
                 <Card id="card-group">
                     <SecondButton>
                         <Card.Body>
+                            <Card.Img variant="top" src={recycle} />
                             <Card.Title id="card-title">Card title</Card.Title>
-                            <Card.Img variant="top" src={tree} />
                             <Card.Text id="card-text">
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
@@ -25,6 +27,7 @@ class MainCardGroup extends Component {
                 <Card id="card-group">
                     <SecondButton>
                         <Card.Body>
+                            <Card.Img variant="top" src={recycle} />
                             <Card.Title id="card-title">Card title</Card.Title>
                             <Card.Text id="card-text">
                             This is a wider card with supporting text below as a natural lead-in to
@@ -36,6 +39,7 @@ class MainCardGroup extends Component {
                 <Card id="card-group">
                     <SecondButton>
                         <Card.Body>
+                            <Card.Img variant="top" src={recycle} />
                             <Card.Title id="card-title">Card title</Card.Title>
                             <Card.Text id="card-text">
                             This is a wider card with supporting text below as a natural lead-in to

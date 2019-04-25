@@ -15,18 +15,23 @@ import MainCard from "../components/MainCard";
 import SecondCard from "../components/SecondCard";
 import MainCardGroup from "../components/MainCardGroup";
 import Wrapper from "../components/Wrapper";
+import HeaderText from "../components/HeaderText";
+import BodyText from "../components/BodyText";
 
-var sectionStyle = {
+const backgroundStyle = {
     width: "100%",
     height: "985px",
     backgroundImage: `url(${Background})`
 };
 
+const colorStyle = {
+    backgroundColor: "white"
+};
 
 class Home extends Component {
     render() {
         return (
-            <div className="App" style={sectionStyle}>
+            <div className="App" style={backgroundStyle}>
                 <Navbar></Navbar>
                 <MainContainer>
                     <Row>
@@ -45,10 +50,17 @@ class Home extends Component {
                             </Link>
                         </Col>
                     </Row>
-                <Row>
-                    <MainCardGroup></MainCardGroup>
-                </Row>
                 </MainContainer>
+                <div style={colorStyle}>
+                    <MainContainer>
+                        <Row>
+                            <MainCardGroup></MainCardGroup>
+                        </Row>
+                    </MainContainer>
+                </div>
+                <div>
+                    <Footer></Footer>
+                </div>
             </div>
         );
     }
