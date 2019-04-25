@@ -5,18 +5,17 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
-const users = require("./routes/api/users");
-const profile = require("./routes/api/profile");
-const posts = require("./routes/api/posts");
-
-const app = express();
+const users = require("./controllers/routes/api/users");
+const profile = require("./controllers/routes/api/profile");
+const posts = require("./controllers/routes/api/posts");
+//./routes/api/posts"
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // DB Config
-const db = require("./config/keys").mongoURI;
+const db = require("./controllers/config/keys").mongoURI;
 
 // Connect to MongoDB
 mongoose
@@ -28,7 +27,7 @@ mongoose
 app.use(passport.initialize());
 
 // Passport Config
-require("./config/passport")(passport);
+require("./controllers/config/passport")(passport);
 
 // Use Routes
 app.use("/api/users", users);
