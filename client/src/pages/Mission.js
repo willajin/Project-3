@@ -9,21 +9,11 @@ import Background from "../images/nature.jpg";
 import Footer from "../components/Footer";
 import Jumbotron from "../components/Jumbotron";
 import MainButton from "../components/MainButton";
-import SecondButton from "../components/SecondButton";
-import HeaderText from "../components/HeaderText";
-import BodyText from "../components/BodyText";
-import recycle from "../images/recycle.png";
-import cat from "../images/cat.png";
-import '../App.css';
 
-const backgroundStyle = {
+var sectionStyle = {
     width: "100%",
     height: "985px",
     backgroundImage: `url(${Background})`
-};
-
-const colorStyle = {
-    backgroundColor: "white"
 };
 
 
