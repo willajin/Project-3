@@ -76,7 +76,7 @@
     <div id="contentContainer" >
         <img id="cat" src="./images/cat.png">
         <img id="trash" src="./images/banana.png">
-        <img id="trash2" src="./images/banana.png">
+        <img id="trash2" src="./images/applecore.png">
 
         <img id="bin" src="./images/greenbin.png">
     </div>
@@ -86,7 +86,7 @@
     </div>
     <div style="text-align: center;">
 
-    <button type="button" class="btn btn-dark" id="msg">Pick up the banana peel.</button>
+    <button type="button" class="btn btn-dark" id="msg">Pick up the trash.</button>
 
     </div>
 
@@ -151,9 +151,9 @@
             if (((trashPos2.x - 20) < catPos.x) && (catPos.x < (trashPos2.x + 20)) && (((trashPos2.y - 20) < catPos.y) && (catPos.y < (trashPos2.y + 20)))) {
                 // cat picks up trash
                 // change image and remove trash
-                thecat.src = "./images/catbanana.png";
+                thecat.src = "./images/cats/catapple.png";
                 trash2.remove();
-                btn.innerHTML = "Throw away the banana peel.";
+                btn.innerHTML = "Throw away the apple core.";
 
                 // set flag true
                 pickedUp2 = true;
