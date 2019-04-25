@@ -66,6 +66,9 @@ class Home extends Component {
                     </Row>
                 </MainContainer>
                 </div>
+                <div>
+                    <Footer></Footer>
+                </div>
             </div>
         );
     }

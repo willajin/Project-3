@@ -39,9 +39,11 @@ class Learn extends Component {
                             <HeaderText>Learn How to Reduce, Reuse, Recycle...with React!</HeaderText>
                             <BodyText>Why is recycling important?</BodyText>
                             <BodyText>Because we all live on this Earth and have a responsibility to take care of it as best as we can.</BodyText>
-                            
                         </Wrapper>
                     </MainContainer>
+                </div>
+                <div>
+                    <Footer></Footer>
                 </div>
             </div>
         );

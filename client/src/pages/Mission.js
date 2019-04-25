@@ -54,6 +54,9 @@ class Mission extends Component {
                         <SecondButton><img src={cat} />Ynah Sebastian</SecondButton>
                     </MainContainer>
                 </div>
+                <div>
+                    <Footer></Footer>
+                </div>
             </div>
         );
     }
