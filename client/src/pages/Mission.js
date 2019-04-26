@@ -51,7 +51,7 @@ class Mission extends Component {
                         <SecondButton><img src={cat} />Jeffrey Orea</SecondButton>
                         <SecondButton><img src={cat} />Raul Lanuza</SecondButton>
                         <SecondButton><img src={cat} />Willa Jin</SecondButton>
-                        <SecondButton><img src={cat} />Ynah Sebastian</SecondButton>
+                        <a  href="https://ymsebast.github.io/Portfolio/"><SecondButton><img src={cat} />Ynah Sebastian</SecondButton> </a>
                     </MainContainer>
                 </div>
                 <div>
