@@ -15,7 +15,6 @@ import BodyText from "../components/BodyText";
 import recycle from "../images/recycle.png";
 import cat from "../images/cat.png";
 import email from "../images/email.png";
-import '../App.css';
 
 var backgroundStyle = {
     width: "100%",

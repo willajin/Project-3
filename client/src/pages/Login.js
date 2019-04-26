@@ -1,18 +1,30 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import MainContainer from "../components/MainContainer";
 import Navbar from "../components/Navbar";
 import Background from "../images/nature.jpg";
 import Footer from "../components/Footer";
 import Jumbotron from "../components/Jumbotron";
 import MainButton from "../components/MainButton";
+import SecondButton from "../components/SecondButton";
+import MainCard from "../components/MainCard";
+import SecondCard from "../components/SecondCard";
+import MainCardGroup from "../components/MainCardGroup";
+import Wrapper from "../components/Wrapper";
+import HeaderText from "../components/HeaderText";
+import BodyText from "../components/BodyText";
 
-var sectionStyle = {
+const backgroundStyle = {
   width: "100%",
-  height: "1237px",
+  height: "985px",
   backgroundImage: `url(${Background})`
+};
+
+const centerStyle = {
+  textAlign: "center",
+  margin: "0 auto"
 };
 
 class Login extends Component {
@@ -46,49 +58,60 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <Navbar />
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Log In</h1>
-              <p className="lead text-center">Sign in to play!</p>
-              <form onSubmit={this.onSubmit}>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    className="form-control form-control-lg"
-                    placeholder="Email Address"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="password"
-                    className="form-control form-control-lg"
-                    placeholder="Password"
-                    name="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                  />
-                </div>
-                <input type="submit" className="btn btn-info btn-block mt-4" />
-              </form>
-            </div>
-          </div>
+        <div style={backgroundStyle}>
+          <Navbar />
+          <MainContainer>
+            <Wrapper>
+              <Row>
+                <Col>
+                  <HeaderText>Log In</HeaderText>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p className="lead text-center">Sign in to play!</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12} md={{ span: 8, offset: 2 }}>
+                  <form onSubmit={this.onSubmit}>
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="form-control form-control-lg"
+                        placeholder="Email Address"
+                        name="email"
+                        value={this.state.email}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="password"
+                        className="form-control form-control-lg"
+                        placeholder="Password"
+                        name="password"
+                        value={this.state.password}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div style={centerStyle}>
+                      <MainButton>
+                        <input type="submit" className="btn" />
+                      </MainButton>
+                    </div>
+                  </form>
+                </Col>
+              </Row>
+            </Wrapper>
+          </MainContainer>
+        </div>
+        <div style={centerStyle}>
+          <Footer></Footer>
         </div>
       </div>
     );
   }
 }
-//   render() {
-//     return (
-//       <div className="App" style={sectionStyle}>
-//         <Navbar />
-//       </div>
-//     );
-//   }
-// }
 
 export default Login;
