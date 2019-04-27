@@ -16,10 +16,10 @@ class MainCardGroup extends Component {
                     <SecondButton>
                         <Card.Body>
                             <Card.Img variant="top" src={recycle} />
-                            <Card.Title id="card-title">Card title</Card.Title>
+                            <Card.Title id="card-title">Reduce</Card.Title>
                             <Card.Text id="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                Don't be trashy! With our game you can learn how to help our world
+                                in a fun way.
                         </Card.Text>
                         </Card.Body>
                     </SecondButton>
@@ -28,10 +28,10 @@ class MainCardGroup extends Component {
                     <SecondButton>
                         <Card.Body>
                             <Card.Img variant="top" src={recycle} />
-                            <Card.Title id="card-title">Card title</Card.Title>
+                            <Card.Title id="card-title">Reuse</Card.Title>
                             <Card.Text id="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                            Let's all be better to our planet. It's the only one we have! When we find
+                            a new one, then we can trash this one.
                             </Card.Text>
                         </Card.Body>
                     </SecondButton>
@@ -40,10 +40,9 @@ class MainCardGroup extends Component {
                     <SecondButton>
                         <Card.Body>
                             <Card.Img variant="top" src={recycle} />
-                            <Card.Title id="card-title">Card title</Card.Title>
+                            <Card.Title id="card-title">React</Card.Title>
                             <Card.Text id="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                            Through our immersive, state of the art game, you'll learn how to be a good person.
                         </Card.Text>
                         </Card.Body>
                     </SecondButton>
